@@ -20,7 +20,7 @@ $message = $_POST["message"];
     <label for="Color">Color : </label>
     <input type="color" id="color" onchange="clickColor(0, -1, -1, 5)" value="#00000" name="color">
 	<label for="Color">Message : </label>
-	<input type="string" value="" name="message" id="message">
+	<input textarea type="string" value="" name="message" id="message">
 	<input type="submit" value="Valider">
 	
 </form>
