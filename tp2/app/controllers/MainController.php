@@ -1,18 +1,18 @@
 <?php
 namespace controllers;
- /**
- * Controller MainController
- * @get("_default", "name"=>"Home")
- **/
+ 
 class MainController extends ControllerBase{
-
+    /**
+     * Controller MainController
+     * @get("_default", "name"=>"Home")
+     **/
 	public function index(){
 		
 	}
 
 
 	/**
-	 *@route("partner/{name}","methods"=>["get"])
+	 *@route("MainController/partner/{name}","methods"=>["get"])
 	**/
 	public function partnerDetails($name){
 		
@@ -22,7 +22,7 @@ class MainController extends ControllerBase{
 
 
 	/**
-	 *@route("sendMessage","methods"=>["post"])
+	 *@route("MainController/sendMessage","methods"=>["post"])
 	**/
 	public function sendMessage(){
 		
@@ -32,7 +32,7 @@ class MainController extends ControllerBase{
 
 
 	/**
-	 *@route("contactForm","methods"=>["get"], "name"=>"Contact")
+	 *@route("MainController/contact","methods"=>["get"], "name"=>"Contact")
 	**/
 	public function contactForm(){
 		
@@ -42,7 +42,7 @@ class MainController extends ControllerBase{
 
 
 	/**
-	 *@route("partners","methods"=>["get"], "name"=>"Partners")
+	 *@route("MainController/partners","methods"=>["get"], "name"=>"Partners")
 	**/
 	public function partnersList(){
 		
