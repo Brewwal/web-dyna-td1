@@ -1,7 +1,9 @@
 <?php
 namespace controllers;
- 
-class MainController extends ControllerBase{
+
+use ws\controllers\AbstractWsController;
+
+class MainController extends AbstractWsController{
     /**
      * Controller MainController
      * @get("_default", "name"=>"Home")
@@ -16,7 +18,7 @@ class MainController extends ControllerBase{
 	**/
 	public function partnerDetails($name){
 		
-		$this->loadView('MainController/partnerDetails.html');
+	    $this->loadView('MainController/partnerDetails.html',['name'=>$name]);
 
 	}
 
